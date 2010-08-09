@@ -49,6 +49,7 @@
 (require 'recentf)
 (require 'open-next-line)
 (require 'tramp)
+(require 'autopair)
 
 ;; backport some functionality to Emacs 22 if needed
 (require 'dominating-file)
