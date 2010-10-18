@@ -1,4 +1,5 @@
 loaddefs.el*
+ac-comphist.dat
 backups/*
 auto-save-list
 custom.el
