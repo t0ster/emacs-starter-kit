@@ -33,28 +33,41 @@
      (autoload 'workon "virtualenv" "Activate a Virtual Environment present using virtualenvwrapper")
 
      ;; Flymake for python configuration
-     (when (require 'flymake)
-       (defun flymake-epylint-init ()
-         "Epylint flymake python file checking"
-         (when (not (subsetp (list (current-buffer)) (tramp-list-remote-buffers)))
-           (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                              'flymake-create-temp-inplace))
-                  (local-file (file-relative-name
-                               temp-file
-                               (file-name-directory buffer-file-name))))
-             (list "epylint" (list local-file)))))
+;;      (when (require 'flymake)
+;;        (defun flymake-epylint-init ()
+;;          "Epylint flymake python file checking"
+;;          (when (not (subsetp (list (current-buffer)) (tramp-list-remote-buffers)))
+;;            (let* ((temp-file (flymake-init-create-temp-buffer-copy
+;;                               'flymake-create-temp-inplace))
+;;                   (local-file (file-relative-name
+;;                                temp-file
+;;                                (file-name-directory buffer-file-name))))
+;;              (list "epylint" (list local-file)))))
 
 
-       (add-to-list 'flymake-allowed-file-name-masks
-                    '("\\.py\\'" flymake-epylint-init))
-       ;; XXX If flymake is integrated with other modes maybe we should
-       ;; revisite this
-       (add-hook 'python-mode-hook 'flymake-find-file-hook)
+;;        (add-to-list 'flymake-allowed-file-name-masks
+;;                     '("\\.py\\'" flymake-epylint-init))
+;;        ;; XXX If flymake is integrated with other modes maybe we should
+;;        ;; revisite this
+;;        (add-hook 'python-mode-hook 'flymake-find-file-hook)
 
-       )
+;;        )
+;;      )
+;;   )
+
+     (when (load "flymake" t)                                                           
+       (defun flymake-pylint-init ()                                                         
+         (let* ((temp-file (flymake-init-create-temp-buffer-copy                             
+                            'flymake-create-temp-inplace))                                   
+                (local-file (file-relative-name                                              
+                             temp-file                                                       
+                             (file-name-directory buffer-file-name))))                       
+           (list "~/.emacs.d/elpa-to-submit/flymake-python/pyflymake.py" (list local-file))))
+       (add-to-list 'flymake-allowed-file-name-masks '("\\.py\\'" flymake-pylint-init))
+     )
+     (add-hook 'find-file-hook 'flymake-find-file-hook)
      )
   )
-
 
 (add-hook 'python-mode-hook 'turn-on-eldoc-mode)
 

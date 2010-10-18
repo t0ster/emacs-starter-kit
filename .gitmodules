@@ -1,0 +1,3 @@
+[submodule "elpa-to-submit/flymake-python"]
+	path = elpa-to-submit/flymake-python
+	url = git@github.com:t0ster/flymake-python.git
