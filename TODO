@@ -6,3 +6,5 @@ to write/finish:
 * submit ruby fixes to flymake
 
 which-func-mode in ruby?
+
+* use ipython as python-shell

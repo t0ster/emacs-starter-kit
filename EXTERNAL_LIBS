@@ -1,0 +1,4 @@
+pylint
+pep8
+pychecker http://downloads.sourceforge.net/project/pychecker/pychecker/0.8.18/pychecker-0.8.18.tar.gz
+nose
