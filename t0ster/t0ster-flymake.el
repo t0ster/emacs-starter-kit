@@ -1,3 +1,5 @@
+(add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/flymake-python"))
+
 (defvar my-flymake-minor-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map "\M-p" 'flymake-goto-prev-error)
