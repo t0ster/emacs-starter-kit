@@ -35,9 +35,4 @@ Key bindings:
   :keymap my-flymake-minor-mode-map
 )
 
-;; (autoload 'my-flymake-minor-mode "my-flymake-minor-mode" "My flymake minor mode" t)
-
-;; (add-to-list 'auto-mode-alist '("\\.py\\'" . my-flymake-minor-mode))
-;; (add-to-list 'minor-mode-alist '(my-flymake-minor-mode " MyFly"))
-
 (add-hook 'python-mode-hook 'my-flymake-minor-mode)

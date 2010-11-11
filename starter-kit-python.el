@@ -70,6 +70,7 @@
   )
 
 (add-hook 'python-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'python-mode-hook 'run-coding-hook)
 
 ;; Cython Mode
 (autoload 'cython-mode "cython-mode" "Mode for editing Cython source files")
