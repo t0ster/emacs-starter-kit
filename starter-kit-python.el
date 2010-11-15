@@ -1,3 +1,4 @@
+(require 'pymacs)
 ;;; 
 (eval-after-load 'python
   '(progn
@@ -29,8 +30,8 @@
                        )))
      
      ;; Virtualenv Commands
-     (autoload 'activate-virtualenv "virtualenv" "Activate a Virtual Environment specified by PATH")
-     (autoload 'workon "virtualenv" "Activate a Virtual Environment present using virtualenvwrapper")
+     ;; (autoload 'activate-virtualenv "virtualenv" "Activate a Virtual Environment specified by PATH")
+     ;; (autoload 'workon "virtualenv" "Activate a Virtual Environment present using virtualenvwrapper")
 
      ;; Flymake for python configuration
 ;;      (when (require 'flymake)
