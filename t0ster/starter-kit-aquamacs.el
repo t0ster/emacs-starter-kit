@@ -17,5 +17,8 @@
      (if (fboundp 'one-buffer-one-frame) (one-buffer-one-frame-mode -1)) ; no one-buffer-per-frame
      (setq special-display-regexps nil) ; do not open certain buffers in special windows/frames
      (set-default 'cursor-type 'box)
+
+     ;; Appearance
+     (aquamacs-autoface-mode -1) ; no mode-specific faces, everything in Monaco
      )
   )
