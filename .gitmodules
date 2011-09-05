@@ -4,3 +4,6 @@
 [submodule "elpa-to-submit/coffee-mode"]
 	path = elpa-to-submit/coffee-mode
 	url = git://github.com/defunkt/coffee-mode.git
+[submodule "elpa-to-submit/haml-mode"]
+	path = elpa-to-submit/haml-mode
+	url = git://github.com/nex3/haml-mode.git
