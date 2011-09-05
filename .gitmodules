@@ -7,3 +7,6 @@
 [submodule "elpa-to-submit/scss-mode"]
 	path = elpa-to-submit/scss-mode
 	url = git://github.com/antonj/scss-mode.git
+[submodule "elpa-to-submit/pony-mode"]
+	path = elpa-to-submit/pony-mode
+	url = git://github.com/davidmiller/pony-mode.git
