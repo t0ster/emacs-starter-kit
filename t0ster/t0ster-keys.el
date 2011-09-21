@@ -8,3 +8,5 @@
 (global-set-key (kbd "M-z") 'undo)
 
 (define-key ac-mode-map (kbd "M-/") 'auto-complete)
+
+(define-key ropemacs-local-keymap "\C-cg" 'rope-goto-definition)
