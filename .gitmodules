@@ -10,3 +10,6 @@
 [submodule "elpa-to-submit/pony-mode"]
 	path = elpa-to-submit/pony-mode
 	url = git://github.com/davidmiller/pony-mode.git
+[submodule "elpa-to-submit/auto-complete"]
+	path = elpa-to-submit/auto-complete
+	url = git://github.com/m2ym/auto-complete.git
