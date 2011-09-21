@@ -6,9 +6,6 @@
 ;; (see http://cx4a.org/software/auto-complete/)
 (require 'auto-complete-config nil t)
 
-(setq ac-auto-start .5)
-(setq ac-quick-help-delay 0.5)
-
 ;; Do What I Mean mode
 (setq ac-dwim t)
 (ac-config-default)

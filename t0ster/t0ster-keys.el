@@ -6,3 +6,5 @@
 ;; Some Mac-friendly key counterparts
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "M-z") 'undo)
+
+(define-key ac-mode-map (kbd "M-/") 'auto-complete)

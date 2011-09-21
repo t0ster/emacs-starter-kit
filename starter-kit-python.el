@@ -1,3 +1,5 @@
+(setq ropemacs-enable-shortcuts nil)
+
 (require 'pymacs)
 ;;; 
 (eval-after-load 'python

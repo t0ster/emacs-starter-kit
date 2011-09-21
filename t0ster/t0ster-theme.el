@@ -9,4 +9,7 @@
 (require 'sr-speedbar)
 (setq sr-speedbar-right-side nil)
 (setq speedbar-use-images nil)
-(setq sr-speedbar-width-x 36)
+(sr-speedbar-toggle)
+
+(setq ac-auto-start nil)
+(setq ac-quick-help-delay 0.5)
